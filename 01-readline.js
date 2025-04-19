@@ -6,7 +6,7 @@ const rl = require('readline').createInterface({
 let input = [];
 rl.on('line', function(line) {
     input.push(line);
-}).on('close', function() {
+}).on('close', function() { // 한줄 한줄 입력을 받아서 입력은 다 맞으면 close하고 process exit
     console.log(input);
     process.exit();
 })
